@@ -1,0 +1,41 @@
+{"intents":  [
+  {"tag":  "greetings",
+  "patterns": ["hello", "hey", "hi", "yo", "how is it going?", "hiya"],
+  "responses": ["Hi there! would you like to browse our latest tablet deals?"]
+  },
+
+  {"tag":  "browse_deals",
+  "patterns": ["yes", "yeah", "yh", "yep", "maybe", "ye", "yea", "i do", "sure", "okay", "ok"],
+  "responses": ["What activities would you require this device for? (Entertainment & Social, Creative, or Education)"]
+  },
+
+  {"tag":  "activities",
+  "patterns": ["entertainment & social", "entertainment", "entertainment & social", "social", "entertainment social", "creative", "education"],
+  "responses": ["Okay! do you have a budget in mind? (Up to £25/pm, Up to £50/pm, Up to £100/pm)"]
+  },
+
+  {"tag":  "budget",
+  "patterns": ["25", "£25", "50", "£50", "100", "£100"],
+  "responses": ["Great, are you looking for any specific brands?"]
+  },
+
+  {"tag":  "brands",
+  "patterns": ["apple", "samsung", "ipad", "samsung galaxy", "lenovo", "microsoft"],
+  "responses": ["Here are a few suitable tablet deals I have found based on your requirements"]
+  },
+
+  {"tag":  "deals",
+  "patterns": [],
+  "responses": ["Are you interested in any of these deals?"]
+  },
+
+   {"tag":  "user_confirm",
+  "patterns": ["yes", "yh", "yep", "yea", "yeah", "yup"],
+  "responses": ["Great! pick a deal and we can continue to checkout"]
+  },
+
+   {"tag":  "user_refuse",
+  "patterns": ["no", "nope", "nah", "na", "not at all", "not really"],
+  "responses": ["Hmm, let me see if I can find a fresh set of deals for you!"]
+  }
+  ]}
